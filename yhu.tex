@@ -1,0 +1,144 @@
+\documentclass[margin,line]{res}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Yongjian Hu \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+465 Winston Chung Hall              & {\it Mobile:}  (951) 880-8390 \\            
+Dept. of Computer Science           & {\it E-mail:}  yhu009@cs.ucr.edu\\       
+University of California Riverside
+Riverside, CA 92521 
+\end{tabular}
+
+
+\section{\sc Research Interests}
+Software reliability, programming languages, debugging, 
+deterministic replay for event-driven mobile systems.
+
+
+\section{\sc Education}
+{\bf University of California Riverside}, Riverside, California USA\\
+%{\em Department of Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D. Candidate, Computer Science \& Engineering, (2012.9 - Present)
+\begin{list2}
+\vspace*{.05in}
+\item GPA: 3.967/4.0
+%\item Dissertation Topic:
+\item Advisor:  Prof. Iulian Neamtiu
+\end{list2}
+\end{list1}
+
+{\bf Donghua University}, Shanghai, China\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] M.S., Computer Science,  2010.3
+\end{list1}
+
+{\bf Donghua University}, Shanghai, China\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.S., Computer Science,  2007.6
+\end{list1}
+
+
+\section{\sc Experience}
+{\bf University of California Riverside}, Riverside, CA USA
+
+\vspace{-.3cm}
+{\em Research Assistant} \hfill {\bf 2013.7 - present}\\
+Research on designing a light-weighted record and replay tool for 
+event-driven mobile system. The current target is Android. Traditional 
+whole system replay tools are too heavy-weighted and not suitable for 
+mobile devices. Our insight is that we could capture only a portion 
+of the events that are enough for reproducting event-driven concurrent 
+bugs.
+
+
+{\bf Intel Corporation}, Shanghai, China
+
+\vspace{-.3cm}
+{\em Software Engineer} \hfill {\bf 2010.4 - 2012.7}\\
+Member of Binary Translation Team, SSG. I join the "Houdini" project.
+"Houdini" is a dynamic binary translator that translates Arm code to 
+x86. It allows Android applications which contain native Arm code to 
+seamlessly run on x86 devices. My main job is to develope tools to ensure 
+product quality and performance. I have developed a code/path coverage 
+tool to provide metrics of the software quality. The performance tool 
+is based on sampling and instrumentation techniques to detect and 
+breakdown the overhead of the product.
+
+
+\section{\sc Publications}
+Yongjian Hu, Wei Xiao. A System-level Path Coverage Tool for Software Validation.
+Intel Software Professionals Conference (SWPC), October 2011.
+
+Wei Xiao, Haihao Shen, Yongjian Hu. A Multi-platform System-level Path Coverage Tool.
+Intel Design and Test Technology Conference (DTTC), June 2011.
+
+
+%\section{\sc Papers in preparation}
+
+%\section{\sc Conference Presentations}
+
+%\section{\sc Professional Experience}
+
+\section{\sc Honors and Awards} 
+University of California Riverside Graduate Fellowship, 2012.
+
+\vspace*{-2.5mm}
+Excellent Graduate Student of Donghua University, 2010.
+
+\vspace*{-2.5mm}
+Excellent Undergraduate Student of Shanghai. 2007.
+
+\vspace*{-2.5mm}
+Bronze Medal, ACM/ICPC Asia Regional, Beijing 2006.
+
+\vspace*{-2.5mm}
+Bronze Medal, ACM/ICPC Asia Regional, Beijing 2005.
+
+\section{\sc Computer Skills} 
+\begin{list2}
+\item Programming Languages: Java, C/C++, OCaml, Ruby.
+\item Tools: Vim, Eclipse, Git, Subversion.
+\item Operating Systems: Linux, Mac OSX.
+\end{list2}
+
+
+
+\end{resume}
+\end{document}
+
+
+
+
