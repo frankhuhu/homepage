@@ -1,0 +1,315 @@
+/*----------------------------------------------
+	
+	content.css
+	(c) 2011-2012 Stefan Heule
+
+----------------------------------------------*/
+/* general rules
+----------------------------------------------*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: #ddd;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+/* container
+----------------------------------------------*/
+#container {
+	background: #fff;
+	padding: 0px;
+	position: relative;
+}
+
+#outer {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#content {
+	padding: 25px;
+}
+
+/* header
+----------------------------------------------*/
+#header {
+	padding: 10px 25px;
+	border-bottom: 1px solid #999;
+}
+
+#header h1 {
+	font-size: 50px;
+}
+
+#header h1 > a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* menu
+----------------------------------------------*/
+#menu {
+	list-style-type: none;
+}
+#menu li {
+	position: relative;
+	bottom: -12px;
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#menu li a, #menu li.cur p {
+	height: 28px;
+	display: inline;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 20px;
+	border: 1px solid #999;
+	border-bottom: none;
+	padding: 5px 14px 5px 10px;
+	margin-right: 10px;
+	background: #eee;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menu li.cur p {
+	display: inline;
+	background: none;
+	border-bottom: 2px solid white;
+}
+
+/* footer
+----------------------------------------------*/
+#footer {
+	clear: both;
+	color: #555;
+	height: 20px;
+	padding: 6px 25px 0px;
+}
+
+#footer p {
+	font-size: 11px;
+	text-align: center;
+}
+
+#footer a {
+	color: #555;
+}
+
+/* debug information
+----------------------------------------------*/
+div.debug-info {
+	padding: 5px 25px;
+	text-align: left;
+	border-top: 1px solid #999;
+}
+
+div.debug-info p {
+	font-size: 12px;
+}
+
+/* general text settings
+----------------------------------------------*/
+p {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+h3,h4 {
+	margin-top: 18px;
+}
+
+a>img {
+	border: none;
+}
+
+p>a,li>a {
+	color: #1D45C6;
+}
+
+ul.text-list {
+	font-size: 12px;
+	line-height: 15px;
+	list-style: none;
+	padding-left: 30px;
+	text-indent: -10px;
+}
+
+ul.text-list li:before {
+	content: "\00BB \0020";
+}
+
+ol, ul {
+	padding-left: 30px;
+}
+
+ol > li, ul > li {
+	margin-bottom: 5px;
+}
+
+/* table of other projects
+----------------------------------------------*/
+
+table.table {
+	padding-top: 15px;
+}
+
+table.table td {
+	vertical-align: top;
+}
+
+table.table td.txt {
+	padding-bottom: 7px;
+	padding-left: 6px;
+}
+
+table.table td img {
+	margin-top: 5px;
+}
+
+table.table a {
+	color: #000;
+}
+
+/* boxes (ok, info, warning, error)
+----------------------------------------------*/
+.box {
+	position: relative;
+	line-height: 11px;
+	margin-bottom: 10px;
+	padding: 10px 15px 10px 15px;
+}
+
+.warning {
+	border-top: 1px dashed #FFA500;
+	border-bottom: 1px dashed #FFA500;
+	background: #FFF3D1;
+}
+
+.error {
+	border-top: 1px dashed #F77;
+	border-bottom: 1px dashed #F77;
+	background: #FDD;
+}
+
+.ok {
+	border-top: 1px dashed #77BA7D;
+	border-bottom: 1px dashed #77BA7D;
+	background: #DDFFDD;
+}
+
+.info {
+	border-top: 1px dashed #6666FF;
+	border-bottom: 1px dashed #6666FF;
+	background: #E5E5FF;
+}
+
+.box a {
+	color: black;
+}
+
+.box p {
+	line-height: 14px;
+	padding-top: 4px;
+}
+
+/* shadow
+----------------------------------------------*/
+.shad_tl {
+	background: url("/inc/img/shadow_edges.png");
+	width: 10px;
+	height: 10px;
+}
+
+.shad_tm {
+	background: url("/inc/img/shadow_tb.png");
+	height: 10px;
+}
+
+.shad_tr {
+	background: url("/inc/img/shadow_edges.png") 10px 0px;
+	width: 10px;
+	height: 10px;
+}
+
+.shad_ml {
+	background: url("/inc/img/shadow_lr.png");
+}
+
+.shad_mr {
+	background: url("/inc/img/shadow_lr.png") 10px;
+}
+
+.shad_bl {
+	background: url("/inc/img/shadow_edges.png") 0px 10px;
+	height: 10px;
+}
+
+.shad_bm {
+	background: url("/inc/img/shadow_tb.png") 0px 10px;
+	height: 10px;
+}
+
+.shad_br {
+	background: url("/inc/img/shadow_edges.png") 10px 10px;
+	height: 10px;
+}
+
+table.shad {
+	empty-cells: show;
+	border-spacing: 0px;
+}
+
+/* often used classes
+----------------------------------------------*/
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.fc {
+	clear: both;
+}
+
+.al {
+	text-align: left;
+}
+
+.ar {
+	text-align: right;
+}
+.gray {
+	color: gray;
+}
+
+.posr {
+	position: fixed;
+	right: 0px;
+}
+
+.pad {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.h {
+	display: none;
+}
