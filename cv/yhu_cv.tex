@@ -64,11 +64,6 @@ static information flow analysis.
 \vspace*{-.1in}
 \begin{list1}
 \item[] M.S., Computer Science,  2010.3
-\end{list1}
-
-{\bf Donghua University}, Shanghai, China\\
-\vspace*{-.1in}
-\begin{list1}
 \item[] B.S., Computer Science,  2007.6
 \end{list1}
 
@@ -78,12 +73,27 @@ static information flow analysis.
 
 \vspace{-.3cm}
 {\em Research Assistant} \hfill {\bf 2013.7 - present}\\
-Research on designing a light-weighted record and replay tool for 
-event-driven mobile system. The current target is Android. Traditional 
-whole system replay tools are too heavy-weighted and not suitable for 
-mobile devices. Our insight is that we could capture only a portion 
-of the events that are enough for reproducting event-driven concurrent 
-bugs.
+Research on applying static and dynamic analysis techniques to detect, verify and debug
+event-driven races on mobile devices.
+First, I designed a light-weighted record and replay tool called VALERA(OOPSLA'15).
+Traditional whole system replay tools record every memory access operation which is
+too heavy-weighted and not suitable for mobile devices. VALERA's insight is to capture
+only a portion of the critical events then replay them by their original execution order, 
+and it's enough for reproducting many event-driven concurrent bugs.
+
+\vspace{-.3cm}
+Second, based on VALERA, I develop another tool called EVRA(ISSTA'16) which aim
+to reproduce and verify event-driven races. EVRA use EventRacer(OOPSLA'15) as front-end
+to collect race report, then use deterministic replay feature provided by VALERA to flip the
+events and observe the side effects to filter out false races and benign races.
+
+\vspace{-.3cm}
+Third, I'm developing a static analysis tool named SIERRA to statically detect event-driven races.
+Unlike dynamic analysis, SIERRA is sound because it tries to reason every possible event order
+that may lead to race. SIERRA is based on WALA to generate call graph and pointer analysis,
+and it innovatively implements selective hybrid context sensitivity, event dependency graph, static 
+happens-before inference and path sensitive refutation techniques to effectively detect races.
+
 
 
 {\bf Microsoft Research}, Redmond, WA USA
