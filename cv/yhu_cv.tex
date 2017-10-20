@@ -75,24 +75,26 @@ static information flow analysis.
 {\em Research Assistant} \hfill {\bf 2013.7 - present}\\
 Research on applying static and dynamic analysis techniques to detect, verify and debug
 event-driven races on mobile devices.
-First, I designed a light-weighted record and replay tool called VALERA(OOPSLA'15).
-Traditional whole system replay tools record every memory access operation which is
-too heavy-weighted and not suitable for mobile devices. VALERA's insight is to capture
-only a portion of the critical events then replay them by their original execution order, 
+
+\vspace{-.3cm}
+First, I developed a static analysis tool named SIERRA(under submission) to statically detect event-driven races.
+There are 3 main research contributions from SIERRA: 1) A new context abstraction called action-sensitivity for
+static analysis that works very well for event-driven programs; 2) Static happens-before relation inference
+to filter out false races within ordered events; 3) Static backward symbolic execution to filter false races
+due to ad-hoc synchronization.
+
+\vspace{-.3cm}
+Second, I designed a light-weighted record and replay tool called VALERA(OOPSLA'15).
+VALERA's insight is to capture only a portion of the critical
+events then replay them by their original execution order, 
 and it's enough for reproducting many event-driven concurrent bugs.
 
 \vspace{-.3cm}
-Second, based on VALERA, I develop another tool called EVRA(ISSTA'16) which aim
-to reproduce and verify event-driven races. EVRA use EventRacer(OOPSLA'15) as front-end
-to collect race report, then use deterministic replay feature provided by VALERA to flip the
+Third, based on VALERA, I develop another tool called EVRA(ISSTA'16) which aim
+to reproduce and verify event-driven races. The core idea of EVRA is to 
+use deterministic replay feature provided by VALERA to flip the
 events and observe the side effects to filter out false races and benign races.
 
-\vspace{-.3cm}
-Third, I'm developing a static analysis tool named SIERRA to statically detect event-driven races.
-Unlike dynamic analysis, SIERRA is sound because it tries to reason every possible event order
-that may lead to race. SIERRA is based on WALA to generate call graph and pointer analysis,
-and it innovatively implements selective hybrid context sensitivity, event dependency graph, static 
-happens-before inference and path sensitive refutation techniques to effectively detect races.
 
 {\bf Google}, Sunnyvale, CA USA
 
@@ -109,14 +111,11 @@ Worked on automatically extract deep links for mobile apps via path-selective ta
 Designed a fully static analysis tool that leveraged state-of-art taint analysis and symbolic execution.
 Advised by Oriana Riva and Suman Nath.
 
-%% For page break;
-\vspace{1.0cm}
-
 {\bf Intel Corporation}, Shanghai, China
 
 \vspace{-.3cm}
 {\em Software Engineer} \hfill {\bf 2010.4 - 2012.7}\\
-Member of Binary Translation Team, SSG. I join the "Houdini" project.
+Member of Binary Translation Team, worked in the "Houdini" project.
 "Houdini" is a dynamic binary translator that translates Arm code to 
 x86. It allows Android applications which contain native Arm code to 
 seamlessly run on x86 devices. My main job is to develope tools to ensure 
@@ -170,7 +169,6 @@ Intel Design and Test Technology Conference(DTTC), June 2011.
 
 
 \section{\sc Professional Experience}
-
 OOPSLA 2017 Artifact Evaluation Committee.
 
 \vspace*{-2.5mm}
@@ -182,27 +180,16 @@ ICSME 2014 External Reviewer.
 \vspace*{-2.5mm}
 QRS 2016 External Reviewer.
 
-%% For page break
-\vspace*{1.5cm}
 
 \section{\sc Honors and Awards} 
-Dissertation Year Program Fellowship, UC Riverside, 2017.
-
-\vspace*{-2.5mm}
-University of California Riverside Graduate Fellowship, 2012.
-
-\vspace*{-2.5mm}
-Excellent Graduate Student of Donghua University, 2010.
-
-\vspace*{-2.5mm}
-Excellent Undergraduate Student of Shanghai. 2007.
-
-\vspace*{-2.5mm}
-Bronze Medal, ACM/ICPC Asia Regional, Beijing 2006.
-
-\vspace*{-2.5mm}
-Bronze Medal, ACM/ICPC Asia Regional, Beijing 2005.
-
+\begin{list2}
+\item Dissertation Year Program Fellowship, UC Riverside, 2017.
+\item University of California Riverside Graduate Fellowship, 2012.
+\item Excellent Graduate Student of Donghua University, 2010.
+\item Excellent Undergraduate Student of Shanghai. 2007.
+\item Bronze Medal, ACM/ICPC Asia Regional, Beijing 2006.
+\item Bronze Medal, ACM/ICPC Asia Regional, Beijing 2005.
+\end{list2}
 
 
 \section{\sc Computer Skills} 
